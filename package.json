@@ -1,0 +1,28 @@
+{
+  "name": "web-scan",
+  "version": "2.0.0-dev",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.2"
+  },
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/web.ts",
+    "start": "node src/web.ts",
+    "migrate:up": "node --env-file-if-exists=.env src/db.ts up",
+    "migrate:down": "node --env-file-if-exists=.env src/db.ts down",
+    "test": "node --env-file-if-exists=.env --test --test-concurrency=1 \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "kysely": "^0.29.8",
+    "mysql2": "^3.24.6",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}

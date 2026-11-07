@@ -1,0 +1,5 @@
+node_modules/
+.env
+# Local-only folders, never published
+legacy/
+graphify-out/
