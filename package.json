@@ -12,15 +12,18 @@
     "migrate:up": "node --env-file-if-exists=.env src/db.ts up",
     "migrate:down": "node --env-file-if-exists=.env src/db.ts down",
     "test": "node --env-file-if-exists=.env --test --test-concurrency=1 \"src/**/*.test.ts\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "spike": "node --env-file-if-exists=.env scripts/spike-tools.ts"
   },
   "dependencies": {
+    "dockerode": "^5.0.1",
     "express": "^5.3.0",
     "kysely": "^0.29.8",
     "mysql2": "^3.24.6",
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@types/dockerode": "^4.0.2",
     "@types/express": "^5.0.6",
     "@types/node": "^24.19.2",
     "typescript": "^7.0.2"

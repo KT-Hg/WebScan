@@ -1,4 +1,7 @@
-# Dev infrastructure. App services (web, worker, sonarqube) are added in T19.
+# Dev infrastructure. App services (web, worker) are added in T19.
+#   docker compose up -d mysql                      # always
+#   docker compose --profile sonar up -d sonarqube  # SAST with SonarQube (~2 GB RAM)
+#   docker compose --profile lab up -d juice-shop   # deliberately vulnerable DAST target
 services:
   mysql:
     image: mysql:8.4
@@ -21,8 +24,36 @@ services:
       timeout: 3s
       retries: 20
 
+  sonarqube:
+    image: sonarqube:26.11.0.134175-community
+    profiles: [sonar]
+    environment:
+      # Docker Desktop's WSL kernel keeps vm.max_map_count below Elasticsearch's bootstrap minimum.
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: "true"
+    ports:
+      - "127.0.0.1:9000:9000"
+    volumes:
+      - sonar-data:/opt/sonarqube/data
+      - sonar-extensions:/opt/sonarqube/extensions
+      - sonar-logs:/opt/sonarqube/logs
+
+  juice-shop:
+    image: bkimminich/juice-shop:v20.3.0
+    profiles: [lab]
+    ports:
+      # Deliberately vulnerable app: never expose beyond loopback.
+      - "127.0.0.1:3000:3000"
+
+networks:
+  # Fixed name so scan containers started by the worker can join it.
+  default:
+    name: webscan-net
+
 volumes:
   mysql-data:
+  sonar-data:
+  sonar-extensions:
+  sonar-logs:
 
 configs:
   # Separate DB for `npm test`: migration tests run down-migrations and must never touch dev data.

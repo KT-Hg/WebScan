@@ -70,7 +70,7 @@ T1 skeleton ─┬─ T2 spike tools (fixtures) ──────────�
 ## Task List
 
 ### Phase 1 — Foundation
-- [x] T1: Walking skeleton (Node 24 + TS, Express 5, config, DB, migrator, healthz, CI) — *CI chạy khi push*
+- [x] T1: Walking skeleton (Node 24 + TS, Express 5, config, DB, migrator, healthz, CI)
 - [ ] T2: Spike — chạy 4 tool trong container tạm, thu fixture JSON thật **(rủi ro cao nhất, làm sớm)**
 - [ ] T3: Đăng nhập thật + session + CSRF + security headers
 - [ ] T4: Admin quản lý user

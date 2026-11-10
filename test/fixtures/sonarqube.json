@@ -1,0 +1,511 @@
+{
+  "ceTask": {
+    "id": "69a56bfb-ead6-4e79-8184-0a59a79c35b0",
+    "type": "REPORT",
+    "componentId": "1463ca17-389a-4b25-9d0c-76439239b6e9",
+    "componentKey": "ws-spike",
+    "componentName": "ws-spike",
+    "componentQualifier": "TRK",
+    "analysisId": "73a92287-4efc-40a1-9c08-7d995960314c",
+    "status": "SUCCESS",
+    "submittedAt": "2026-11-07T10:37:00+0000",
+    "submitterLogin": "admin",
+    "startedAt": "2026-11-07T10:37:00+0000",
+    "executedAt": "2026-11-07T10:37:02+0000",
+    "executionTimeMs": 1769,
+    "hasScannerContext": true,
+    "warningCount": 0,
+    "warnings": [],
+    "infoMessages": []
+  },
+  "issues": [
+    {
+      "key": "279c6160-58f3-4bc7-9a57-2133e44f5790",
+      "rule": "docker:S6471",
+      "severity": "MINOR",
+      "component": "ws-spike:Dockerfile",
+      "project": "ws-spike",
+      "line": 2,
+      "hash": "5a458be833b705dfa6fbe799b115ecf3",
+      "textRange": {
+        "startLine": 2,
+        "endLine": 2,
+        "startOffset": 0,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "The \"node\" image runs with \"root\" as the default user. Make sure it is safe here.",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "dockerfile",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "VULNERABILITY",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "97f7b367-831a-49b7-8794-9c949b5c8471",
+      "rule": "docker:S6470",
+      "severity": "CRITICAL",
+      "component": "ws-spike:Dockerfile",
+      "project": "ws-spike",
+      "line": 6,
+      "hash": "62fe534900fd26e90e87fb0df4eb7b28",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6,
+        "startOffset": 5,
+        "endOffset": 6
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Copying recursively might inadvertently add sensitive data to the container. Make sure it is safe here.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "dockerfile",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "VULNERABILITY",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "8e7ca4ad-0692-44c2-baf7-e5bc1f0b7db3",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "ws-spike:app.js",
+      "project": "ws-spike",
+      "line": 42,
+      "hash": "dad99401274e89a891694277047daa01",
+      "textRange": {
+        "startLine": 42,
+        "endLine": 42,
+        "startOffset": 8,
+        "endOffset": 15
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "",
+      "tags": [
+        "cwe",
+        "secret"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "VULNERABILITY",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "22336340-f0e2-48c5-937e-f1cdcee191b4",
+      "rule": "Web:S5254",
+      "severity": "MAJOR",
+      "component": "ws-spike:public/about.html",
+      "project": "ws-spike",
+      "line": 2,
+      "hash": "166248a6129a1e4370d20adc2d4c23f3",
+      "textRange": {
+        "startLine": 2,
+        "endLine": 2,
+        "startOffset": 0,
+        "endOffset": 6
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add \"lang\" and/or \"xml:lang\" attributes to the \"<html>\" or \"<body>\" element",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [
+        "accessibility",
+        "wcag2-a"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "2b949cc6-4097-4799-b3f4-81d8336aa17f",
+      "rule": "Web:PageWithoutTitleCheck",
+      "severity": "MAJOR",
+      "component": "ws-spike:public/about.html",
+      "project": "ws-spike",
+      "line": 2,
+      "hash": "166248a6129a1e4370d20adc2d4c23f3",
+      "textRange": {
+        "startLine": 2,
+        "endLine": 2,
+        "startOffset": 0,
+        "endOffset": 6
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a <title> tag to this page.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [
+        "user-experience"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "5f096e11-7827-4630-8d70-b201be1fb9e9",
+      "rule": "css:S4657",
+      "severity": "CRITICAL",
+      "component": "ws-spike:public/css/screen.css",
+      "project": "ws-spike",
+      "line": 19,
+      "hash": "e5d8d0c26667ecda2e6a8ec2f53c8211",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 2,
+        "endOffset": 6
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Overridden property \"font-size\" by shorthand \"font\"",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "22c39e63-4c1a-4175-a4e9-837e035b813f",
+      "rule": "css:S4649",
+      "severity": "MAJOR",
+      "component": "ws-spike:public/css/screen.css",
+      "project": "ws-spike",
+      "line": 193,
+      "hash": "f2237de4ae34ed9ec5cda8aaf1766b20",
+      "textRange": {
+        "startLine": 193,
+        "endLine": 193,
+        "startOffset": 15,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Missing generic font family",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "c6b5645a-dc0e-465c-b92a-8134362bb10a",
+      "rule": "css:S4649",
+      "severity": "MAJOR",
+      "component": "ws-spike:public/css/screen.css",
+      "project": "ws-spike",
+      "line": 210,
+      "hash": "f2237de4ae34ed9ec5cda8aaf1766b20",
+      "textRange": {
+        "startLine": 210,
+        "endLine": 210,
+        "startOffset": 15,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Missing generic font family",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "",
+      "tags": [],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "3f71b8f7-335b-43e8-a4ac-eedfd29e059e",
+      "rule": "javascript:S5443",
+      "severity": "CRITICAL",
+      "component": "ws-spike:routes/index.js",
+      "project": "ws-spike",
+      "line": 269,
+      "hash": "e79c250b5491622def90b6dbe01461a0",
+      "textRange": {
+        "startLine": 269,
+        "endLine": 269,
+        "startOffset": 25,
+        "endOffset": 47
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure publicly writable directories are used safely here.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "VULNERABILITY",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "b4d90130-d824-4b7e-a56a-5ef8ce314e8f",
+      "rule": "javascript:S1656",
+      "severity": "MAJOR",
+      "component": "ws-spike:routes/index.js",
+      "project": "ws-spike",
+      "line": 274,
+      "hash": "7bfd7ebe9735d3af7cd8cab716c1b8fc",
+      "textRange": {
+        "startLine": 274,
+        "endLine": 274,
+        "startOffset": 15,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "'data' is assigned to itself.",
+      "effort": "3min",
+      "debt": "3min",
+      "author": "",
+      "tags": [
+        "editable-source"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "72091f3c-2323-4498-b597-8c37637c95b3",
+      "rule": "javascript:S2245",
+      "severity": "MAJOR",
+      "component": "ws-spike:routes/index.js",
+      "project": "ws-spike",
+      "line": 330,
+      "hash": "cb587321e26cde6c3909a13ab5a2a096",
+      "textRange": {
+        "startLine": 330,
+        "endLine": 330,
+        "startOffset": 29,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure that using this pseudorandom number generator is safe here.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "",
+      "tags": [
+        "cwe",
+        "cryptography",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-11-07T10:36:45+0000",
+      "updateDate": "2026-11-07T10:36:45+0000",
+      "type": "VULNERABILITY",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    }
+  ],
+  "hotspots": []
+}

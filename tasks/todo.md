@@ -18,7 +18,7 @@
 
 **Verification:**
 - [x] `npm test` (7/7) · `npm run typecheck` xanh
-- [ ] CI xanh trên `main` — *chạy khi push lần đầu*
+- [x] CI xanh trên `main` (run 42362962204)
 - [x] Manual: `docker compose up -d mysql && npm run dev && curl localhost:8888/healthz` → `200 {"db":"ok"}`
 
 **Ghi chú triển khai:** Kysely 0.29 để `Migrator`/`NO_MIGRATIONS` ở `kysely/migration`. Dùng map migration tĩnh trong `src/db.ts` thay `FileMigrationProvider` (dynamic import đường dẫn `D:\…` lỗi trên Windows) — mỗi migration mới thêm 1 dòng import.
@@ -33,13 +33,19 @@
 **Description:** Script tạm (`scripts/spike-tools.ts`) dùng dockerode chạy từng tool với **mảng args** vào một target lab (`bkimminich/juice-shop` cho DAST, một repo public có lỗ hổng biết trước cho SAST), lưu output JSON thật làm fixture và ghi lại chính xác image/version/lệnh/exit code. Mục đích: chứng minh A6/A8/A9 khả thi trước khi xây gì khác.
 
 **Acceptance criteria:**
-- [ ] Có `test/fixtures/{zap,wapiti,trivy,sonarqube}.json` từ lần chạy thật (đã cắt gọn, không chứa secret)
-- [ ] `docs/tools.md` ghi: image + version pin, lệnh, thư mục output, ý nghĩa exit code (ZAP: 0–2 = OK, 3 = lỗi), thời gian chạy
-- [ ] Xác nhận Trivy `repo` với token qua env chạy được cho repo private; Sonar auto-create project bằng analysis token
+- [x] Có `test/fixtures/{zap,wapiti,trivy,sonarqube}.json` từ lần chạy thật (đã cắt gọn, không chứa secret)
+- [x] `docs/tools.md` ghi: image + version pin, lệnh, thư mục output, ý nghĩa exit code (ZAP: 0–2 = OK, 3 = lỗi), thời gian chạy
+- [ ] Xác nhận Trivy `repo` với token qua env chạy được cho repo private; Sonar auto-create project bằng analysis token — *Sonar ✅; Trivy private chờ token của người dùng (`npm run spike -- trivy-private`)*
 
 **Verification:**
-- [ ] Manual: chạy `node scripts/spike-tools.ts` thấy 4 file fixture
-- [ ] Không có chuỗi token nào trong fixture (`grep -r ghp_ test/fixtures` rỗng)
+- [x] Manual: `npm run spike` ra đủ 4 file fixture
+- [x] Không có chuỗi token nào trong fixture (prefix `ghp_`/`github_pat_`/`sq?_` + giá trị thật trong `.env`)
+
+**Ghi chú triển khai** (chi tiết trong `docs/tools.md`):
+- ZAP: `/zap/wrk` cần `chown` trước (container init) — tmpfs không dùng được vì mất dữ liệu khi container dừng → đưa vào T7.
+- Wapiti cần URL seed có tham số với SPA; không có CWE → bảng map tĩnh ở T13.
+- Trivy cần lockfile trong repo; target spike đổi sang `snyk-labs/nodejs-goof`.
+- SonarQube: CWE lấy qua `/api/rules/show` (T14); fixture không có hotspot → T14 cần mẫu riêng.
 
 **Dependencies:** T1
 **Files likely touched:** `scripts/spike-tools.ts`, `test/fixtures/*.json`, `docs/tools.md`, `docker/wapiti/Dockerfile`
